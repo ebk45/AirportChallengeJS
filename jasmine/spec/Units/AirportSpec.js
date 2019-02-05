@@ -7,11 +7,11 @@ describe('Airport', function(){
     plane = jasmine.createSpy('plane');
   });
   it('has no planes by default', function(){
-    expect(airport.planes_in_hangar()).toEqual([]);
+    expect(airport.hangar()).toEqual([]);
   });
 
   it('can instruct a plane to land', function(){
     airport.land(plane);
-    expect(airport.planes_in_hangar()).toContain(plane)
+    expect(airport.hangar()).toContain(plane)
   });
 });
