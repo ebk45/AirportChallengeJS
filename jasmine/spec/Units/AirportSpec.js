@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 describe('Airport', function(){
   var airport;
@@ -6,6 +6,6 @@ describe('Airport', function(){
     airport = new Airport();
   });
   it('has no planes by default', function(){
-    expect(airport.hangar()).toEqual([]);
+    expect(airport.planes_in_hangar()).toEqual([]);
   });
 });
