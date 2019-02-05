@@ -11,3 +11,7 @@ Airport.prototype.hangar = function() {
 Airport.prototype.land = function(plane) {
   this._hangar.push(plane)
 };
+
+Airport.prototype.takeoff = function(plane) {
+  this._hangar.filter(function(eachPlane){ return eachPlane != plane })
+};
