@@ -10,6 +10,11 @@ Airport.prototype.planes_in_hangar = function() {
 };
 
 Airport.prototype.land = function(plane) {
+  console.log(this.hangar);  
   this.hangar.push(plane)
 };
+
+// a = new Airport();
+// console.log(a.land('plane'))
+
 
