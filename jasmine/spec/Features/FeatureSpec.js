@@ -18,4 +18,11 @@ describe('Feature Test:', function(){
     airport.takeoff(plane);
     expect(airport.hangar()).not.toContain(plane);
   });
+
+  it('planes cannot take off in stormy weather', function(){
+    airport.land(plane);
+    // stub weather
+    weather = 
+    expect(airport.takeoff(plane)).toThrow(new Error("error"));
+  })
 });
